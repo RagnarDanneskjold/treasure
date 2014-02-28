@@ -1,0 +1,11 @@
+{
+  "name": "treasure",
+  "version": "0.0.1",
+  "description": "An API and web client for cooperating with others to generate multisignature transactions in bitcoin.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ryan X. Charles <ryanxcharles@gmail.com>",
+  "license": "MIT"
+}
