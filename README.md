@@ -26,18 +26,18 @@ Propose -> Sign -> Broadcast
 
 ## Class layout
 
-Treasure: for storing public keys, SINs
-Db: database abstraction layer (local files or remote)
-Wallet: for storing bitcoin private keys, SIN private keys
-Api: manage treasures, wallets, db, SINs
+* Treasure: for storing public keys, SINs
+* Db: database abstraction layer (local files or remote)
+* Wallet: for storing bitcoin private keys, SIN private keys
+* Api: manage treasures, wallets, db, SINs
 
 ## Dependencies
-Bitcore: for bitcoin stuff
-Cosign: for building multsignature transactions
-Insight: for querying blockchain, broadcasting transactions
+* Bitcore: for bitcoin stuff
+* Cosign: for building multsignature transactions
+* Insight: for querying blockchain, broadcasting transactions
 
 ## Applications
-treasure-cli: command-line tool
-treasure-web: web interface
-treasure-server: serve the web interface
-treasure-api: remote db storage for wallets, treasures
+* treasure-cli: command-line tool
+* treasure-web: web interface
+* treasure-server: serve the web interface
+* treasure-api: remote db storage for wallets, treasures
