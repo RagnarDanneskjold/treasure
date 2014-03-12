@@ -19,9 +19,10 @@ Normally, you sign a transaction and broadcast it.
 
 Sign -> Broadcast
 
-Now, rather than "spend" bitcoins, what you do is propose that some bitcoins be
-spent. Then you can see the transactions that you or others have proposed, and
-optionally sign them. Once a transaction is fully signed, it is broadcast.
+But with treasure, rather than simply spend bitcoins, what you do is propose
+that some bitcoins be spent. Then you can see the transactions that you or
+others have proposed, and optionally sign them. Once a transaction is fully
+signed, it is broadcast.
 
 Propose -> Sign -> Broadcast
 
