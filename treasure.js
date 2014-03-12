@@ -5,8 +5,8 @@ var bitcore = imports.bitcore || require('bitcore');
 
 var Treasure = function(M, N) {
   var self = this;
-  self.M = 5;
-  self.N = 3;
+  self.M = 3;
+  self.N = 5;
   self.SINs = [];
   self.pubKeys = {}; //array of hex pubKeys for each SIN
 };
@@ -46,36 +46,8 @@ Treasure.sortPubKeys = function(pubKeys) {
     }
   }
 
-  pubKeysBuf.sort(function(k1, k2) {
-    //first, make them the same length
-    if (k1.length > k2.length) {
-      var k = new Buffer(k1.length);
-      k.fill(0);
-      var i = k1.length - k2.length;
-      k2.copy(k, k1.length - k2.length);
-      k2 = k;
-    }
-    else if (k2.length > k1.length) {
-      var k = new Buffer(k2.length);
-      k.fill(0);
-      var i = k2.length - k1.length;
-      k1.copy(k, k2.length - k1.length);
-      k1 = k;
-    }
-    
-    //sort as big endian numbers
-    for (var i in k1) {
-      var x = k1[i];
-      var y = k2[i];
-      if (x < y)
-        return -1;
-      if (x > y)
-        return 1;
-      else
-        continue;
-    }
-    return 0;
-  });
+  //sort lexicographically, i.e. as strings, i.e. alphabetically
+  pubKeysBuf.sort();
 
   return pubKeysBuf;
 };
