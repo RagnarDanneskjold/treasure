@@ -4,16 +4,14 @@ Treasure
 Treasure is the multisignature analog of a wallet. Unlike a regular wallet that
 has only the private keys and public keys of one person, a treasure has the
 public keys, but not the private keys, of N different people, M of which are
-required to sign transactions. A treasure, by definition, is only the public
-keys, and not the private keys. It is still necessary for members to store
-their private keys in a wallet. The treasure only contains the public keys.
-This is all handled automatically by the treasure applications.
+required to sign transactions. It is still necessary for members of a treasure
+to store their private keys in a wallet.
 
 The purpose of treasure is to make multisignature transactions as easy as
-regular transactions. Spending bitcoins from a treasure should be as easy as
-spending bitcoins from a regular wallet. The only extra hurdle is that other
-people are required to sign the transaction before it is broadcast. This means
-there is an extra stage.
+regular transactions, or nearly so. Spending bitcoins from a treasure should be
+as easy as spending bitcoins from a regular wallet. The only extra hurdle is
+that other people are required to sign the transaction before it is broadcast.
+This means there is an extra stage.
 
 Normally, you sign a transaction and broadcast it.
 
