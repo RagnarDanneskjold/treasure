@@ -4,15 +4,11 @@
   "description": "An API and web client for cooperating with others to generate multisignature transactions in bitcoin.",
   "main": "client.js",
   "dependencies": {
+    "soop": "git://github.com/bitpay/soop.git#11866b17b1a66f48e4adafb9b0aa2a9f908e1f13",
     "bitcore": "git://github.com/bitpay/bitcore.git",
-    "insight-bitcore-api": "git://github.com/bitpay/insight-api.git",
     "cosign": "git://github.com/bitpay/cosign.git",
-    "soop": "git://github.com/bitpay/soop.git",
-    "express": "*"
+    "express": "=3.5.0"
   },
-  "author": {
-    "name": "Ryan X. Charles",
-    "email": "ryanxcharles@gmail.com>",
-  },
+  "author": "Ryan X. Charles <ryanxcharles@gmail.com>",
   "license": "MIT"
 }
