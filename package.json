@@ -1,7 +1,7 @@
 {
   "name": "treasure",
-  "version": "0.0.1",
-  "description": "An API and web client for cooperating with others to generate multisignature transactions in bitcoin.",
+  "version": "0.0.2",
+  "description": "A public key manager for multisignature transactions.",
   "main": "client.js",
   "dependencies": {
     "soop": "git://github.com/bitpay/soop.git#11866b17b1a66f48e4adafb9b0aa2a9f908e1f13",
