@@ -7,6 +7,8 @@
     "soop": "git://github.com/bitpay/soop.git#11866b17b1a66f48e4adafb9b0aa2a9f908e1f13",
     "bitcore": "git://github.com/bitpay/bitcore.git",
     "cosign": "git://github.com/bitpay/cosign.git",
+    "should": "=3.1.3",
+    "mocha": ">=1.0.0",
     "express": "=3.5.0"
   },
   "author": "Ryan X. Charles <ryanxcharles@gmail.com>",
