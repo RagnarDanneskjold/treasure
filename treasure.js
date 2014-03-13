@@ -33,6 +33,16 @@ Treasure.prototype.addPubKeyHex = function(SIN, pubKeyHex) {
   return true;
 };
 
+Treasure.prototype.addSIN = function(SIN) {
+  var self = this;
+  if (self.SINs.indexOf(SIN) > -1)
+    return true;
+  if (self.SINs.length >= self.N)
+    return false;
+  self.SINs.push(SIN);
+  return true;
+};
+
 Treasure.prototype.getAddress = function(index) {
   var self = this;
   var redeemScript = self.getRedeemScript(index);
@@ -76,3 +86,5 @@ Treasure.prototype.getSortedPubKeys = function(index) {
   //sort lexicographically, i.e. as strings, i.e. alphabetically
   return pubKeys.sort();
 };
+
+module.exports = require('soop')(Treasure);
